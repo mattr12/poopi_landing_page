@@ -4,7 +4,7 @@
     "details": [
       {
         "appIDs": [
-          "ZGYAA3XSXK.com.poopi-app.com"
+          "ZGYAA3XSXK.com.poopi-app.poopi"
         ],
         "paths": [
           "*"
@@ -19,7 +19,7 @@
   },
   "webcredentials": {
     "apps": [
-      "ZGYAA3XSXK.com.poopi-app.com"
+      "ZGYAA3XSXK.com.poopi-app.poopi"
     ]
   }
 }
