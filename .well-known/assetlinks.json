@@ -1,0 +1,13 @@
+[
+	{
+		"relation": ["delegate_permission/common.handle_all_urls"],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "com.poopi.poopi",
+			"sha256_cert_fingerprints": [
+        "48:AD:4B:CC:4C:33:11:73:B8:F2:D9:25:77:9B:9C:8C:86:D1:70:73:F2:33:14:9D:14:E3:A4:69:65:65:4C:37",
+        "AC:5A:ED:88:5B:85:D7:36:43:6B:32:40:5B:B2:A3:84:A5:77:4C:8F:63:00:EA:BE:0D:D8:0F:D3:68:E9:35:17"
+      ]
+		}
+	}
+]
