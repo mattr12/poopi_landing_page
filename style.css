@@ -109,7 +109,6 @@ img {
 }
 
 .heading h1 {
-  /* font-size: 7.2vw; */
   font-size: 3.6rem;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -149,24 +148,39 @@ img {
   margin-right: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .hero {
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100vh;
+    flex-direction: column-reverse;
   }
 
   .heading {
     max-width: 100%;
-    text-align: center;
-  }
-
-  .phone-wrapper {
-    max-width: 80%;
-    max-height: 50vh;
+    margin-top: 9px;
   }
 
   nav {
     display: none;
+  }
+
+  .heading h1 {
+    margin-top: 0;
+    font-size: 2.7em;
+  }
+
+  .heading ul li {
+    font-size: 1em;
+  }
+
+  .phone {
+    position: relative;
+    max-width: 72%;
+    height: auto;
+    top: -36px;
+    margin: 0;
+    transform: rotate(18deg);
+  }
+
+  .store_buttons {
+    margin-bottom: 15px;
   }
 }
