@@ -30,7 +30,7 @@
   font-weight: 400;
 
   color: var(--primary_color);
-  background-color: #f0f0f0;
+  background-color: var(--mid_gradient);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -54,12 +54,12 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     var(--top_gradient),
     var(--mid_gradient),
     var(--bottom_gradient)
-  );
+  ); */
 
   /* background: radial-gradient(
     circle,
@@ -87,6 +87,10 @@ body {
   height: 100vh;
 }
 
+img {
+  user-select: none;
+}
+
 .hero {
   display: flex;
   flex-direction: row; /* Align heading and image horizontally */
@@ -94,8 +98,9 @@ body {
   align-items: center; /* Vertically center them */
   height: 100vh; /* Make the hero take up the full viewport height */
   width: 100vw; /* Full viewport width */
-  padding: 0 20px;
+  padding: 0 10%;
   box-sizing: border-box;
+  max-width: 1250px;
 }
 
 .heading {
@@ -104,8 +109,16 @@ body {
 }
 
 .heading h1 {
-  font-size: 2.5rem;
+  /* font-size: 7.2vw; */
+  font-size: 3.6rem;
+  line-height: 1.2;
   margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.heading h1 i {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .benefits_list {
@@ -114,8 +127,9 @@ body {
 }
 
 .benefits_list li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 1.2rem;
+  line-height: 1.27;
 }
 
 .phone {
@@ -125,20 +139,12 @@ body {
   object-fit: contain; /* Maintain aspect ratio */
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column; /* Stack the text and image vertically on smaller screens */
-    justify-content: flex-start; /* Align items at the top */
-  }
+.store_buttons {
+  display: flex;
+  margin-top: 24px;
+}
 
-  .heading {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .phone {
-    max-width: 80%;
-    max-height: 50vh; /* Ensure the image fits within the smaller screen */
-  }
+.store_buttons img {
+  width: 127px;
+  margin-right: 10px;
 }
